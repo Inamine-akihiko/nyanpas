@@ -1,0 +1,660 @@
+@charset "utf-8";
+/* 共通部分*/
+html{
+    font-size: 100%;
+}
+body{
+    line-height: 1.7;
+    background-color: #fff;
+    color: #cdb88b;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #65272b;
+}
+img{
+    max-width: 100%;
+}
+/* 背景 切り替え(緑) */
+.background1{
+  background-color: #f4f0e5;
+  width: 100vw;
+  position: relative;
+  padding-bottom: 5%;
+}
+/* 背景 切り替え(白) */
+.background2{
+  width: 100vw;
+  position: relative;
+  padding-bottom: 5%;
+}
+/* 猫の足跡 */
+.asiato-left{
+  width: 15% ;
+  height: auto;
+  position: absolute;
+  top: 2%;
+  left: 0%;
+}
+.asiato-left-2{
+  width: 15% ;
+  height: auto;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+
+}
+.asiato-right{
+  width: 15% ;
+  height: auto;
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+}
+.asiato-right-2{
+  width: 15% ;
+  height: auto;
+  position: absolute;
+  top: 2%;
+  right: 0%;
+}
+/* header*/
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+.gnav-sp {
+  display: none;
+}
+#menu-button {
+  display: none;
+}
+.sp-type{
+  position: relative;
+}
+.header-back{
+  width: 100vw;
+  background-color: #f4f0e5;
+}
+.main-nav{
+    display: flex;
+    text-transform: uppercase;
+    margin-top: 70px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+    font-family: 'Kiwi Maru', serif;
+    transition:transform 0.3s;
+}
+.main-nav li:hover{
+  transform:scale(1.1);
+}
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.large_wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* home(大きな背景画像、スライダー) */
+.slick__bg {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slick__bg01 {
+  background-image: url(../images/background/background1.jpg);
+}
+.slick__bg02 {
+  background-image: url(../images/background/background2.jpg);
+}
+.slick__bg03 {
+  background-image: url(../images/background/background3.jpg);
+}
+.slick{
+  pointer-events: none;
+}
+/* キャッチコピー */
+.home{
+    position: relative;
+}
+.home .home-content{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+}
+.home .home-content h1{
+    font-family: 'Kiwi Maru', serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+/* ロード後のロゴ */
+.start {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+  }
+  .start p {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 280px;
+  }
+  /* タイトル */
+  .title h1{
+    text-align: center;
+    margin: 3% 0;
+    font-family: 'Kiwi Maru', serif;
+  }
+  /* コンセプト・カフェの過ごし方 */
+  .about{
+    position:relative;
+    width:100%;
+    height:450px;
+  }
+  .about .left{
+    position:absolute;
+    width: 50%;
+    height:auto;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 0 10px #999;
+  }
+  .about .content_right{
+    position:absolute;
+    width:55%;
+    height: 400px;
+    background: #FFF8EF;
+    bottom: 0;
+    right: 0;
+    padding: 40px 90px 0;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px #999;
+  }
+
+  .about .content_right p{
+    text-align: justify;
+    margin: 3% 0;
+  }
+
+  .about .content_right h2{
+    text-align: justify;
+  }
+
+  .about .right{
+    position:absolute;
+    width: 50%;
+    height:auto;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 0 10px #999;
+  }
+  .about .content_left{
+    position:absolute;
+    width:55%;
+    height: 400px;
+    background: #FFF8EF;
+    bottom: 0;
+    left: 0;
+    padding: 40px 90px 0;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px #999;
+  }
+
+  .about .content_left p{
+     text-align: justify;
+     margin-bottom: 3%;
+  }
+  /* スクロールCSS */
+.fade-in {
+    opacity: 0;
+    transition-duration: 3000ms;
+    transition-property: opacity, transform;
+  }
+  .fade-in-left {
+    transform: translate(-50px, 0);
+  }
+  .fade-in-right {
+    transform: translate(50px, 0);
+  }
+  .scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .fade-in-up {
+    transform: translate(0, 50px);
+  }
+
+  .fade-in-down {
+    transform: translate(0, -50px);
+  }
+  /* news */
+  .content_title{
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .news_scroll{
+    font-family: 'Kiwi Maru', serif;
+    margin-bottom: 3%;
+  }
+  .news_scroll h2{
+    text-align: center;
+  }
+  .news_scroll ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .news_scroll ul li{
+    list-style: none;
+    width: 31%;
+    max-width: 317px;
+  }
+  .news_scroll ul li a{
+    border-radius: 5px;
+  }
+  .news_scroll ul li img{
+    border-radius: 5px;
+  }
+  .news-img{
+    object-fit: cover;
+  }
+  /* 猫のキャスト画像 */
+  .menu_grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  }
+  /* 猫紹介用のボックス */
+  .cat_intr{
+    margin: 2em auto;
+    padding:2em;/*内側余白*/
+    position: relative;
+    border: 8px solid #eee;/* 線の太さ・種類・色 */
+    z-index: 0;
+  }
+  .lum-lightbox-inner img.lum-img {
+    max-width: 100%;
+  }
+  .cat_intr:before
+  {
+    background-color:#cca497;/* ワンポイントの色 */
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 8px;
+    height: 8px;
+    z-index: 1;
+  }
+  .cat_intr .cat_name{
+    font-family: 'Kiwi Maru', serif;
+    text-align: justify;
+    margin-bottom: 3%;
+  }
+  .cat_intr p{
+    margin-bottom: 3%;
+  }
+  /* 料金表 */
+  .caption{
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+  .caption h2{
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+  }
+  .item{
+    padding: 8px;
+    background-color: #ffffff;
+  }
+  .shop_tb{
+    border-collapse: separate;
+    border-spacing: 1px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    width: 100%;
+    background: #cccccc;
+}
+.heading{
+    width: 200px;
+    background-color:#cdb88b;
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    color: #F4F5F7;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* フッターのサイトメニュー */
+  .site-menu ul {
+    display: flex;
+  }
+
+  .site-menu ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+  }
+
+  .site-menu ul li a {
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+/* フッター */
+  .footer {
+    color: #65272b;
+    background-color: #f4f0e5;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: block;
+    width: 235px;
+    margin-top: 3%;
+  }
+
+  .footer-tel {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 28px;
+  }
+
+  .footer-time {
+    font-size: 13px;
+    margin-top: 16px;
+  }
+
+  .sns-btn {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .sns-btn li {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  .copyright {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 90px;
+  }
+
+  /* タブレット用 */
+@media(max-width:834px){
+  .about{
+    height: 350px;
+  }
+  .about .content_right{
+    width:50%;
+    height: 250px;
+    bottom: 15%;
+    right: 3%;
+    padding: 3% 5%;
+  }
+  .about .left{
+    width: 45%;
+    left: 3%;
+  }
+  .about .content_left{
+    width:50%;
+    height: 250px;
+    bottom: 15%;
+    left: 3%;
+    padding: 3% 5%;
+  }
+  .about .right{
+    width: 45%;
+    right: 3%;
+  }
+  .asiato-left,.asiato-left-2,.asiato-right-2{
+    width: 20%;
+  }
+}
+/* スマホ用 */
+@media (max-width:600px){
+    /* ハンバーガメニュー */
+    .menu-button-inner {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    .main-nav{
+      display: none;
+    }
+    .menu-button-inner span {
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #3f2515;
+      position: absolute;
+      transition: .4s;
+      box-sizing: border-box;
+    }
+    .menu-button-inner span:nth-child(1) {
+      top: 0;
+    }
+    .menu-button-inner span:nth-child(2) {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .menu-button-inner span:nth-child(3) {
+      bottom: 0;
+    }
+    /* ハンバーガーメニューアニメーション */
+    .menu-button-inner.active span:nth-child(1) {
+      top: 0px;
+      transform: translateY(12px) rotate(-45deg);
+      width: 100%;
+    }
+    .menu-button-inner.active span:nth-child(2) {
+      opacity: 0;/*真ん中の線は透過*/
+    }
+    .menu-button-inner.active span:nth-child(3){
+      bottom: 0px;
+      transform: translateY(-12px) rotate(45deg);
+      width: 100%;
+    }
+    .gnav-sp {
+      display: none;
+      width: 100vw;
+      height: 370px;
+      background-color: #f4f0e5;
+      position: fixed;
+      z-index: 100;
+      top: 165px;
+      left: 0;
+      opacity: 90%;
+      border-bottom: 0.1px solid
+    }
+    ul.gnav-sp li {
+      text-align: center;
+      padding: 23px 0;
+      border-top: 0.1px solid #cccc99;
+    }
+    #menu-button {
+      position: absolute;
+      top: 30%;
+      right: 0%;
+      display: block;
+      width: 70px;
+      height: 70px;
+      padding: 22px 18px;
+      margin: 0 0 0 auto;
+    }
+    /* 背景 */
+    .background1{
+      padding-bottom: 10%;
+    }
+    /* 各タイトル */
+    .content_title{
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    .asiato-left,.asiato-left-2,.asiato-right,.asiato-right-2{
+      width: 30% ;
+    }
+    .asiato-right-2{
+      right: -10%;
+    }
+      /* header */
+      .main-nav{
+        font-size: 1rem;
+        margin-top:10px;
+    }
+    .main-nav li{
+        margin: 0 13px;
+    }
+    .page-header{
+        flex-direction: column;
+        align-items: start;
+    }
+    .home .home-content{
+        top: 50%;
+    }
+    .home .home-content h1{
+        writing-mode: vertical-rl;
+    }
+    /* コンセプト */
+    .about{
+        box-sizing: border-box;
+        height: 450px;
+    }
+    .about .left{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+    }
+    .about.content_right{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+        right: 10%;
+        bottom: 10%;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px #999;
+        z-index: 2;
+    }
+    .about .content_right{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+        right: 10%;
+        bottom: 0%;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px #999;
+        z-index: 2;
+    }
+      h2{
+        font-size: 18px;
+      }
+      p{
+        font-size: 14px;
+      }
+    .about .right{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+    }
+    .about .content_left{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+        left: 10%;
+        bottom: 0%;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px #999;
+        z-index: 2;
+      }
+    /* news */
+    .news_scroll{
+        overflow-x: scroll;
+    }
+    .news_scroll ul{
+        width: 173vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+    }
+    .news_scroll ul li{
+        list-style: none;
+        width: 50vw;
+    }
+    /* 設備 */
+    .facility_flex{
+      flex-direction: column;
+    }
+    .facility_flex .flex_box{
+      width: 100%;
+    }
+    /* 料金表 */
+    .caption{
+      width: 100%;
+    }
+    /* フッター */
+    .site-menu ul {
+      display: block;
+      text-align: center;
+    }
+    .site-menu li {
+      margin-top: 10%;
+    }
+    .footer-logo {
+      margin-top: 5%;
+    }
+
+    .footer-tel {
+      font-size: 20px;
+    }
+
+    .copyright {
+      margin-top: 15%;
+    }
+  }
