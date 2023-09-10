@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ねこカフェ にゃんぱす</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/icon.ico">
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 起動時のロード画面 -->
+  <div class="start">
+    <p><img src="images/nyanpas_icon.png" alt="" /></p>
+  </div>
+  <div class="header-back">
+    <header class="page-header wrapper">
+      <h1><a href="index.html"><img src="images/nyanpas_icon.png" alt="アイコン画像" class="logo"></a></h1>
+      <!-- PC用 -->
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#how">カフェの過ごし方</a></li>
+          <li><a href="#cat`s">Cat's</a></li>
+          <li><a href="#news">news</a></li>
+          <li><a href="#price">料金システム</a></li>
+        </ul>
+      </nav>
+      <!-- SP用 -->
+      <nav class="sp-type">
+        <ul class="gnav-sp">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#how">カフェの過ごし方</a></li>
+          <li><a href="#cat`s">Cat's</a></li>
+          <li><a href="#news">news</a></li>
+          <li><a href="#price">料金システム</a></li>
+        </ul>
+      </nav>
+      <div id="menu-button">
+        <div class="menu-button-inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- トップ画面 (画像スライド) -->
+  <div class="home">
+    <div class="slick">
+      <div class="slick__bg slick__bg01"></div>
+      <div class="slick__bg slick__bg02"></div>
+      <div class="slick__bg slick__bg03"></div>
+    </div>
+    <div class="home-content wrapper">
+      <h1 class="page-title">猫と過ごす 幸せな時間</h1>
+    </div>
+  </div>
+  <div class="background1">
+    <!-- 猫の足跡 画像 -->
+    <img src="images/asiato/nikukyu_1.png" alt="" class="asiato-left">
+    <img src="images/asiato/nikukyu_2.png" alt="" class="asiato-right">
+    <!-- コンセプト -->
+    <h1 class="content_title wrapper" id="concept" >コンセプト</h1>
+    <div class="about wrapper">
+      <img src="images/concept.jpg" alt="" class="left fade-in fade-in-left">
+      <div class="content_right fade-in fade-in-right">
+        <h2>"癒しの空間で<br>心地よい時間を過ごす"</h2>
+        <p>ふわふわの猫達と触れ合いながら、ゆったりとしたひとときを楽しんでください。</p>
+        <p>心のリフレッシュと笑顔の誘発を目指しています！</p>
+      </div>
+    </div>
+    <!-- カフェの過ごし方 -->
+    <h1 class="content_title wrapper" id="how" >カフェの過ごし方</h1>
+    <div class="about wrapper">
+      <img src="images/howto.jpeg" alt="" class="right fade-in fade-in-right">
+      <div class="content_left fade-in fade-in-left">
+        <p>"まったりとした時間を<br>過ごしながら、猫たちと触れ合う"</p>
+        <p>ゆったりとしたソファで<br>くつろぎながら、美味しいドリンクを楽しむ</p>
+        <p>猫たちの可愛らしい姿を<br>眺めながら、リラックスした音楽を聴く</p>
+      </div>
+    </div>
+  </div>
+  <div class="background2">
+    <img src="images/asiato/nikukyu_3.png" alt="" class="asiato-left-2">
+    <!-- 猫スタッフ 紹介(Cat's) -->
+    <h1 class="content_title wrapper" id="cat`s">Cat's</h1>
+    <div class="wrapper menu_grid">
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/_scottish-fold_gray.jpg">
+          <img src="images/cast/_scottish-fold_gray.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:まりん</h2>
+          <p>猫たちの中で一番のお姉さんであり美猫です!</p>
+          <p>とても人懐っこく餌を持ってなくてもすり寄ってきます!</p>
+          <p>当店に来てぜひまりんと遊んでください</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/_scottish-fold_white.jpg">
+          <img src="images/cast/_scottish-fold_white.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:ぽん太</h2>
+          <p>不機嫌顔ですが一番優しいキュートな猫ちゃんです!</p>
+          <p>気まぐれに膝に乗ってきて甘えてきます!</p>
+          <p>当店に来てぜひさだはると遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/scottish-fold_brown.jpg">
+          <img src="images/cast/scottish-fold_brown.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:さだはる</h2>
+          <p>おやつ大好き、わんぱく猫ちゃんです!</p>
+          <p>おやつを持っているとすごい勢いで向かってきます(笑)</p>
+          <p>当店に来てぜひさだはると遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/americanshort.jpg">
+          <img src="images/cast/americanshort.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:ぎゅうべい</h2>
+          <p>猫たちの中で運動神経 No,1のイケメン猫です!</p>
+          <p>ジャンプが高く猫じゃらしで遊ぶのが大得意です!</p>
+          <p>当店に来てぜひまりんと遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/americanshort_white.jpg">
+          <img src="images/cast/americanshort_white.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:にゃみ</h2>
+          <p>人見知りのまったりマイペースの猫ちゃんです!</p>
+          <p>人見知りですが頭を撫でられるととても喜びます!</p>
+          <p>当店に来てぜひにゃみと遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/ragdoll.jpg">
+          <img src="images/cast/ragdoll.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:ピン子</h2>
+          <p>歩き方が世界一可愛い猫ちゃんです!</p>
+          <p>歩き方が特徴的で見てるだけで癒されます!</p>
+          <p>当店に来てぜひピン子と遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/syam.jpg">
+          <img src="images/cast/syam.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:チャッキー</h2>
+          <p>好奇心旺盛でフレンドリーな猫ちゃんです!</p>
+          <p>おもちゃで遊ぶのと頭を撫でられるのが大好きです!</p>
+          <p>当店に来てぜひチャッキーと遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/scottish-fold_shimashima.jpg">
+          <img src="images/cast/scottish-fold_shimashima.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:ぴーち</h2>
+          <p>まんまるお目々と鳴き方が特徴的な猫ちゃんです！</p>
+          <p>鳴き方が特徴的な甘えん坊さんです!</p>
+          <p>当店に来てぜひぴーちと遊んでください!</p>
+        </div>
+      </div>
+      <div class="fade-in fade-in-left">
+        <a class="grid-gallery" href="images/cast/scottish_fold.jpg">
+          <img src="images/cast/scottish_fold.jpg" alt="" />
+        </a>
+        <div class="cat_intr">
+          <h2 class="cat_name">名前:にゃんべぇ</h2>
+          <p>お手が出来るとても賢い猫ちゃんです！</p>
+          <p>お手が出来てとても賢く食欲旺盛です！笑</p>
+          <p>当店に来てぜひにゃんべぇと遊んでください!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background1">
+    <!-- news -->
+    <h1 class="content_title wrapper" id="news">news</h1>
+    <div class="news_scroll wrapper">
+      <ul>
+        <li class="fade-in fade-in-right">
+          <a href="#">
+            <div class="new-img">
+              <img src="images/news/newopan.jpg" alt="mipig cafe イオンモール幕張新都心店のご予約を開始いたしました。" class="news-img">
+              <p ><time datetime="2023-04-18">2023.04.18</time></p>
+            </div>
+            <p>にゃんぱす新大久保店がリニューアルいたしました。</p>
+          </a>
+        </li>
+        <li class="fade-in fade-in-right">
+          <a href="#">
+            <div>
+              <img src="images/news/food.jpg" alt="mipig cafe イオンモール幕張新都心店のご予約を開始いたしました。" class="news-img">
+              <p ><time datetime="2023-04-18">2023.06.12</time></p>
+            </div>
+            <p>フード/カフェメニュー多数変更いたしました</p>
+          </a>
+        </li>
+        <li class="fade-in fade-in-right">
+          <a href="#">
+            <div class="new-img">
+              <img src="images/news/icon_nyanpas.png" alt="mipig cafe イオンモール幕張新都心店のご予約を開始いたしました。" class="news-img">
+              <p ><time datetime="2023-04-18">2023.08.18</time></p>
+            </div>
+            <p>にゃんぱすオリジナルグッズを販売する事になりました。</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="background2">
+    <!-- 料金システム -->
+    <img src="images/asiato/nikukyu_2.png" alt="" class="asiato-right-2">
+    <h1 class="content_title wrapper" id="price">料金システム</h1>
+    <div class="wrapper price fade-in fade-in-left">
+      <div class="caption">
+        <div>
+          <table class="shop_tb">
+            <tbody>
+              <tr>
+                <td class="heading">入室料</td>
+                <td class="item">フリータイム:2200円
+                  <br>
+                  60分:1300円
+                  <br>
+                  30分:650円
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td class="heading">入室料(会員)</td>
+                <td class="item">フリータイム:2000円
+                  <br>
+                  60分:1150円
+                  <br>
+                  30分:575円
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td class="heading">ドリンク</td>
+                <td class="item">無料</td>
+              </tr>
+              <tr>
+                <td class="heading">その他</td>
+                <td class="item">無料駐車場有り
+                  <br>
+                  コンセント多数、漫画/雑誌豊富にございます。
+                </td>
+              </tr>
+              <tr>
+                <td class="heading">有償オプション</td>
+                <td class="item">猫用おやつ、レンタル機器
+                  <br>
+                  (携帯充電器等)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footerここから -->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#how">カフェの過ごし方</a></li>
+        <li><a href="#cat`s">Cat's</a></li>
+        <li><a href="#news">news</a></li>
+        <li><a href="#price">料金システム</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="index.html">
+      <img src="images/nyanpas_icon.png" alt="にゃんぱす">
+    </a>
+    <p class="footer-tel">TEL 01-2345-6789</p>
+    <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+    <ul class="sns-btn">
+      <li><a href="https://twitter.com/" target="_blank"><img src="images/sns-icon/twitter.png" alt="Twitter"></a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="images/sns-icon/facebook.png" alt="Facebook"></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><img src="images/sns-icon/Instagram.png" alt="Instagram"></a></li>
+    </ul>
+    <p class="copyright"><small>&copy;にゃんぱす</small></p>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+  <script>
+    new LuminousGallery(document.querySelectorAll(".grid-gallery"));
+    </script>
+    <script>
+    //スライド
+    $(function() {
+      $('.slick').slick({
+        fade: true,
+        autoplay: true,
+        speed:3000,
+        autoplaySpeed : 5000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        arrows: false,
+      })
+    });
+
+    //ロード画面
+    setTimeout(function () {
+      $(".start p").fadeIn(1600);
+    }, 500); //0.5秒後にロゴをフェードイン!
+    setTimeout(function () {
+      $(".start").fadeOut(500);
+    }, 4000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+    jQuery(function ($) {
+      var fadeIn = $('.fade-in');
+      $(window).scroll(function () {
+        $(fadeIn).each(function () {
+          var offset = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > offset - windowHeight + 150) {
+            $(this).addClass("scroll-in");
+          }
+        });
+      });
+    });
+
+    // ハンバーガーメニュー
+    $(".menu-button-inner").click(function () {
+      $(this).toggleClass('active');
+    });
+    // gnavを出す
+    $('#menu-button').on('click',function(){
+      $('.gnav-sp').fadeToggle(500);
+    });
+    // gnavクリック時消える
+    $(".gnav-sp a").on("click", function() {
+      $('.gnav-sp').fadeToggle(500);
+      $(".menu-button-inner").toggleClass('active');
+    });
+  </script>
+</body>
+</html>
